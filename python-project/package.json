@@ -1,0 +1,14 @@
+{
+  "name": "python-project",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/workspace": "15.9.3",
+    "@nx-python/nx-python": "^1.0.3",
+    "nx": "15.9.3"
+  }
+}
