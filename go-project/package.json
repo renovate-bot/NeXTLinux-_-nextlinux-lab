@@ -8,7 +8,7 @@
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.9.3",
-    "@nx-go/nx-go": "^2.7.0",
+    "@nx-go/nx-go": "^3.0.0",
     "nx": "15.9.3"
   }
 }

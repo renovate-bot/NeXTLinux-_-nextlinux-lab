@@ -126,12 +126,27 @@
     yargs "^17.6.2"
     yargs-parser "21.1.1"
 
-"@nx-go/nx-go@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@nx-go/nx-go/-/nx-go-2.7.0.tgz#375303a300476c3e48bcb5e9e52ca32d5098af1e"
-  integrity sha512-TtesqhhHKG8uIagqHpxNlNN0MLlT0klGY8rWl83CZ1UIaEmL/2GWZMW8aHh1e0uRxBqe1hM6XNECJFADmknGTQ==
+"@nx-go/nx-go@^3.0.0":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@nx-go/nx-go/-/nx-go-3.3.1.tgz#e4252bf009f3fa756115c841c6718cba8118ed6e"
+  integrity sha512-0BJXOvwUxQgqUEEn7NYjDhU4v4sweLkJKmTUY8UTSA93nGVpdXuEDgChNxa7Nq3TTLzIIJQODFB1hcnf/5UsyA==
   dependencies:
-    fs-extra "^9.1.0"
+    "@nx/devkit" ">= 17 < 21"
+    tslib "^2.3.0"
+
+"@nx/devkit@>= 17 < 21":
+  version "20.8.2"
+  resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-20.8.2.tgz#4bed032a06ac37910fae5e231849283b8ac415fb"
+  integrity sha512-rr9p2/tZDQivIpuBUpZaFBK6bZ+b5SAjZk75V4tbCUqGW3+5OPuVvBPm+X+7PYwUF6rwSpewxkjWNeGskfCe+Q==
+  dependencies:
+    ejs "^3.1.7"
+    enquirer "~2.3.6"
+    ignore "^5.0.4"
+    minimatch "9.0.3"
+    semver "^7.5.3"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "21.1.1"
 
 "@parcel/watcher@2.0.4":
   version "2.0.4"
@@ -207,11 +222,6 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
-
-at-least-node@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
-  integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 axios@1.1.3:
   version "1.1.3"
@@ -500,16 +510,6 @@ fs-extra@^11.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
-  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
-  dependencies:
-    at-least-node "^1.0.0"
-    graceful-fs "^4.2.0"
-    jsonfile "^6.0.1"
-    universalify "^2.0.0"
-
 fs-minipass@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-2.1.0.tgz#7f5036fdbf12c63c169190cbe4199c852271f9fb"
@@ -729,6 +729,13 @@ minimatch@3.0.5:
   integrity sha512-tUpxzX0VAzJHjLu0xUfFv1gwVp9ba3IOuRAVH2EGuRW8a5emA2FlACLqiT/lDVtS1W+TGNwqz3sWaNyLgDJWuw==
   dependencies:
     brace-expansion "^1.1.7"
+
+minimatch@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
+  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
+  dependencies:
+    brace-expansion "^2.0.1"
 
 minimatch@^3.0.4, minimatch@^3.1.1:
   version "3.1.2"
@@ -977,6 +984,11 @@ semver@7.3.4:
   integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
   dependencies:
     lru-cache "^6.0.0"
+
+semver@^7.5.3:
+  version "7.7.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.2.tgz#67d99fdcd35cec21e6f8b87a7fd515a33f982b58"
+  integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
 
 signal-exit@^3.0.2:
   version "3.0.7"
