@@ -7,7 +7,7 @@
   "dependencies": {},
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
-    "nx": "15.9.3"
+    "nx": "15.9.7"
   },
   "workspaces": [
     "packages/*"
